@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History Update</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .container { max-width: 600px; margin: auto; padding: 20px; border: 1px solid #ddd; border-radius: 10px; }
+        label { font-weight: bold; display: block; margin-top: 10px; }
+        input, select { width: 100%; padding: 8px; margin-top: 5px; }
+        button { margin-top: 20px; padding: 10px; background: blue; color: white; border: none; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>History Update</h2>
+        <form id="historyUpdateForm">
+            <label>Priority</label>
+            <input type="number">
+            
+            <label>Appointment Date and Time</label>
+            <input type="datetime-local">
+            
+
+            
+
+            
+            <label>Patient Full Name</label>
+            <input type="text">
+           
+            
+            <h3>Details</h3>
+            
+            
+            <label>History</label>
+            <input type="text" placeholder="Enter patient history">
+            
+
+            
+
+            
+
+            
+            <label>Patient Contact Number</label>
+            <input type="text">
+            
+            <label>Description</label>
+            <input type="text">
+            
+            <label>Provider Name</label>
+            <input type="text">
+            
+
+            <label>Resolved Date/Time</label>
+            <input type="datetime-local">
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('historyUpdateForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('History update details submitted successfully!');
+        });
+    </script>
+</body>
+</html>
